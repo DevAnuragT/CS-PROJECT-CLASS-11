@@ -1,3 +1,12 @@
+'''NAME : ANURAG KAVI SHANKAR TAHKUR
+CLAS: XI A,  ROLL. NO : 6, 
+DAV INTERNATIONAL SCHOOL
+COMPUTER SCIENCE PROJECT (2021-2022)'''
+
+'''PROCESS TO INTALL A LIBRARY
+1. RUN CMD AS ADMINISTRATOR
+2. TYPE : "pip install <name of library>"
+3. PRESS ENTER, THEN WAIT FOR IT TO INSTALL.'''
 
 from tkinter import *
 import pandas as pd
@@ -64,9 +73,8 @@ ROW    TITLE ''')
         path_root.geometry("600x400")
 
         #instruction
-        inst= Label(path_root, text = '''***SAVE YOUR FILE IN THE GIVEN DIRECTORY
-        'C:\\Users\\hp\\OneDrive - DAV INTERNATIONAL SCHOOL, KHARGHAR (1)\\Computer science\\Programs'
-        PLEASE MAKE SURE THAT YOUR SHEET NAME AND HEADER AT 0 IS SAME AND HEAD AT 1 IS ANALYSIS ''', bg="white", fg="red", font="areal 9 bold")
+        inst= Label(path_root, text = '''***SAVE YOUR FILE IN THE GIVEN DIRECTORY IN SAME FOLDER IN WHICH PROGRAM IS SAVED
+        PLEASE MAKE SURE THAT YOUR SHEET NAME AND HEADER AT 0 IS SAME AND HEADER AT 1 IS ANALYSIS ''', bg="white", fg="red", font="areal 9 bold")
         inst.pack(side=BOTTOM, pady=20)
         quest_2= Label(path_root, text="Enter name of your file with .xlsx at the end ", fg="black", font="areal 13")
         quest_2.pack(side=TOP,pady=20)
@@ -545,7 +553,7 @@ ROW    TITLE ''')
                 
 
             def beta():
-                print("Looks like you are interested in", sheets_1[2])
+                print("Looks like you are interested in", sheets_1[3])
                 print()
                 
                 #graph
@@ -597,7 +605,6 @@ ROW    TITLE ''')
                 p.legend()
                 p.show()
                 
-
             def ex():
                 sheet_root.destroy()
                 print('''THANK YOU
@@ -721,7 +728,6 @@ def no():
         print('''THANK YOU
         VISIT AGAIN''')
 
-
     m= Button(comp_root, text = " MICROSOFT ",padx= 40 , pady =20 ,command =micro , font="areal 15", bg="deepskyblue")
     m.pack(side=LEFT,padx=25)
     a= Button(comp_root, text = " ALPHABET ",padx= 40 , pady =20 ,command =alpha, font="areal 15", bg="yellowgreen")
@@ -731,7 +737,6 @@ def no():
     me= Button(comp_root, text = " META ",padx= 40 , pady= 20 ,command =met, font="areal 15", bg="coral")
     me.pack(side=BOTTOM, pady=62)
     
-
 b1= Button(root, text = " YES ",padx= 50 , pady =30 ,command =yes, font="areal 20", bg="cyan")
 b1.pack(side=LEFT,padx=40)
 b1.bind("<Button-1>", click)
@@ -742,7 +747,4 @@ b2.bind("<Button-1>", click)
 
 root.mainloop()
 
-
-
-
-
+print("DONE")
